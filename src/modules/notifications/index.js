@@ -208,6 +208,15 @@ export default class Notifications extends ModuleBase {
     return getNativeModule(this).getScheduledNotifications();
   }
 
+   /**
+   * Get delivered notifications.
+   */
+
+  getDeliveredNotifications() {
+    return getNativeModule(this).getDeliveredNotifications();
+  }
+
+
   onNotification(
     nextOrObserver: OnNotification | OnNotificationObserver
   ): () => any {

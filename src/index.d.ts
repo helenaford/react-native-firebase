@@ -1433,6 +1433,8 @@ declare module 'react-native-firebase' {
           schedule: Schedule
         ): any;
 
+         getDeliveredNotifications(): Promise<Notification[]>;
+
         /**
          * Sets the badge number on the iOS app icon.
          */
